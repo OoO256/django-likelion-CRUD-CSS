@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+유투브 등록하기
+{% for post in post_list %}
+   	{% if forloop.counter0|divisibleby:4 %}
+		<div class='hot'>
+	{% endif %}
+
+	<div class='video-container'>
+    	<img src= '{{post.img}}' alt = "cant show" width="100%">
+	    	<a href="{% url 'edit' index=post.pk %}">{{post.title}}</a>
+            <p class='author' > {{ post.author }} </p>
+            <p class='pub_date' > {{ post.pub_date }}</p>
+            <p class='text' > {{ post.body|linebreaks }} </p>
+    </div>
+
+    {% if forloop.counter|divisibleby:4 %}
+       	</div>
+    {% endif %}
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,35 @@
+{% load static %}
+<head>
+<meta charset="utf-8">
+<title>Hello...</title>
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+	<span class = 'youtube'>⏵</span>
+    <a class='logo' href="{% url 'home' %}">youtube</a>
+	<div class='search-bar'>검색</div>
+	<div class='icon-zone'>
+	    <a class='icon' href="{% url 'new' %}">등록</a>
+	    <a class='icon' href="https://yonguk-190325-homework-ooo256.c9users.io/admin">로그인</a>
+	</div>
+</header>
+
+<section class='main'>
+	<nav>
+		<div class='menu'>홈</div>
+		<div class='menu'>인기</div>
+		<div class='menu'>구독</div>
+		<div class='menu'>어쩌구</div>
+		<div class='menu'>저쩌구</div>
+	</nav>
+	<div class='content'>
+	    <h1>새 글을 쓰는 페이지 입니다.</h1>
+        <form method="POST" class="post-form"> {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Save</button>
+        </form>
+	</div>
+</section>
+</body>

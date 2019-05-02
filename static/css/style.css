@@ -1,0 +1,129 @@
+* {
+    box-sizing : border-box;
+}
+
+header {
+    height : 56px;
+    border-style: solid;
+    border-width: 0 0 4px 0;
+    border-color : gray;
+    
+    display : flex;
+    justify-content : space-between;
+}
+
+body {
+    margin : 0;
+}
+
+.logo{
+    color : black;
+    font-size: 24px;
+    font-weight: bold;
+    margin : 0 15px;
+    vertical-align: middle;
+}
+
+.youtube{
+    color : white;
+    text-align : center;
+    width : 25.5px;
+    height : 17px;
+    background-color: #ff0000;
+    margin : auto 1em;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+.search-bar{
+    margin : auto auto;
+    width : 40%;
+    height : 30px;
+    
+    border-style: double;
+    border-width: 3px;
+    border-color : gray;
+}
+
+.icon-zone{
+    display : flex;
+    justify-content : space-around;
+}
+
+.icon{
+    margin : 0.5em;
+    width : 36px;
+    height : 36px;
+    background-color : gray;
+    color : white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main{
+    display : flex;
+}
+
+.menu{
+    width : 240px;
+    height : 40px;
+    margin : 10px 0;
+    font-size : 24px;
+    font-weight: bold;
+    text-align : center;
+}
+
+nav{
+    width : 240px;
+    background-color : gray;
+    height : 1000px;
+}
+
+.content {
+    width : 60%;
+    margin : 0 auto;
+    
+    font-size : 24px;
+    font-weight: bold;
+    
+    background-color :#DCDCDC;
+}
+
+.hot{
+    display : flex;
+}
+
+.video-container{
+    width : 22%;
+    border-style: solid;
+    border-width: 5px;
+    border-color : gray;
+    border-radius: 5px;
+    margin : 10px;
+}
+
+.video{
+    margin : 75px 25px;
+    width : 270px;
+    height : 152px;
+}
+
+.title{
+    font-size : 24px !important;
+    font-weight: bold;
+}
+
+.text{
+    font-size : 12px !important;
+}
+
+.author{
+    font-size : 8px !important;
+}
+
+.pub_date{
+    font-size : 8px !important;
+}
+
+
