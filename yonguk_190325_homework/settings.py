@@ -129,7 +129,7 @@ STATICFILES_DIRS = [
 ]
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
